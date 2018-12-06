@@ -11,3 +11,6 @@ with open('s3photos.csv') as csvfile:
         if result.status_code == 200:
             image = result.raw.read()
             open(filename,"wb").write(image)
+
+            
+            #code from https://www.quora.com/How-do-I-write-a-Python-code-to-download-images-from-100-URLs-stored-in-a-CSV-file
