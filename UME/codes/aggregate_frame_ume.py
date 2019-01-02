@@ -108,6 +108,7 @@ with open(outlocation, 'w', newline='') as file:
                 # more than the retirement limit (here set at 15).
                 if users != users | {new_user} and i <= 15: 
                     users |= {new_user}
+                    i += 1
                     for count in range(0, len(field_1)):  # summing the elements of a answer_vector
                         bin_1[count] += field_1[count]
 
